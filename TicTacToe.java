@@ -102,11 +102,15 @@ public class TicTacToe implements ActionListener{
             str="0";         
           }
         
-        
+           // e.getSource().setBackground(Color.GREEN);
+            JButton button=(JButton)e.getSource();
+            button.setBackground(Color.green);
+
         if(e.getSource()==jb1)
         {
             jb1.setText(str);
             jb1.setFont(new Font("Arial", 1, 30));
+            jb1.setBackground(Color.red);
             jb1.setEnabled(false);
         }
         if(e.getSource()==jb2)
